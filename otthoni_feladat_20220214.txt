@@ -1,0 +1,33 @@
+Otthoni Projekt 
+
+Készítsen parancssoros programot, mely dobokockákkal való dobás működését hivatott szimulálni.
+
+ - A program a parancsosoros argumentumok alapján végezzen dobásokat, legyen meghatározható, hogy hány kockával történjen a dobás, valamint, hogy azok hány oldalúak, illetve mi a legkisebb érték rajtuk.
+
+ - Az argumentumokat a következők szerint dolgozza fel:
+	Pl.:
+		php cube.php --min <legkisebb érték a kockán> --max <legnagyobb érték a kockán> --count <dobások száma>
+ - Az argumentum párok (--min <min_érték>) sorrendje legyen felcserélhető, a "--min" argumentumot követő argumentum a legkisebb lehetséges érték a kockán, a "--max" argumentumot követő arg. a legnagyobb lehetséges érték a kockán, a "--count" argumentumot követő arg. a kockák száma.
+ - Az argumentum párok bármelyike legyen elhagyható, abban az esetben a program dolgozzon alapértelmezett értékekkel.
+ - Amennyiben a dobás értéke kisebb 7-nél az karakterekkel rajzolódjon ki a terminálra.
+		Pl.:
+			3. dobás: 4
+			*   *
+
+			*   *
+ - Az egy szavas argumentumok legyenek helyettesíthetőek 1-1 betűvel
+	--count   -c
+	--min     -i
+	--max	  -a
+ - A --help vagy -h argumentum leírja a program működését
+ 
+			
+A következők közül bármelyik megfelelő paraméterezés, és a leírtak szerinti minden további lehetséges kombináció is:
+	php cube.php --min <legkisebb érték a kockán> --max <legnagyobb érték a kockán> --c <dobások száma>
+	php cube.php --max <legnagyobb érték a kockán> --i <legkisebb érték a kockán> --count <dobások száma>
+	php cube.php --i <legkisebb érték a kockán> --count <dobások száma> --max <legnagyobb érték a kockán>
+	php cube.php --min <legkisebb érték a kockán> --max <legnagyobb érték a kockán> 
+	php cube.php --max <legnagyobb érték a kockán> --min <legkisebb érték a kockán> 
+	php cube.php --min <legkisebb érték a kockán> --c <dobások száma>
+	php cube.php --max <legnagyobb érték a kockán> --count <dobások száma>
+
